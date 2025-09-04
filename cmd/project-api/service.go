@@ -17,4 +17,11 @@ func NewProjectsAPI(service *service.ProjectsService) *ProjectsAPI {
 	return &ProjectsAPI{
 		service: service,
 	}
+	
 }
+func NextProjectAPI(service *service.ProjectService) *ProjectsAPI {
+	return &ProjectAPI{
+		service: service,
+	}
+}	
+	
